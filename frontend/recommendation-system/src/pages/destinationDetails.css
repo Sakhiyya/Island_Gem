@@ -1,0 +1,379 @@
+/* ── PAGE ─────────────────────────────────────────────────────────── */
+.dd-page {
+  background: #f0f9ff;
+  min-height: 100vh;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #1e293b;
+}
+
+.dd-main {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 100px 24px 64px;
+}
+
+/* ── BACK LINK (top of page) ──────────────────────────────────────── */
+.dd-back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  color: #00838f;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  transition: color 0.2s;
+}
+.dd-back-link:hover { color: #006064; }
+
+/* ── MAIN CARD ────────────────────────────────────────────────────── */
+.dd-card {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.09);
+  overflow: hidden;
+  margin-bottom: 32px;
+}
+
+/* Full image — natural proportions, never cropped */
+.dd-photo {
+  width: 100%;
+  height: auto;
+  display: block;
+  max-height: 480px;
+  object-fit: contain;
+  background: #e0f2f7;
+}
+
+/* Info strip below image */
+.dd-info-header {
+  padding: 24px 28px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 16px;
+  border-top: 3px solid #e0f7fa;
+}
+
+.dd-info-left {
+  flex: 1;
+  min-width: 0;
+}
+
+.dd-title {
+  font-size: 1.9rem;
+  font-weight: 700;
+  color: #0d2238;
+  margin: 0 0 12px;
+  line-height: 1.2;
+}
+
+.dd-badges {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.dd-badge {
+  padding: 5px 14px;
+  border-radius: 999px;
+  font-size: 0.82rem;
+  font-weight: 600;
+}
+
+.dd-badge-type {
+  background: #e0f7fa;
+  color: #00838f;
+}
+
+/* Rating block on the right */
+.dd-rating-block {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 6px;
+}
+
+.dd-review-pill {
+  font-size: 0.82rem;
+  color: #64748b;
+  background: #f1f5f9;
+  padding: 3px 12px;
+  border-radius: 999px;
+}
+
+/* ── SECTIONS ─────────────────────────────────────────────────────── */
+.dd-section {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.07);
+  padding: 28px 28px 24px;
+  margin-bottom: 24px;
+}
+
+.dd-section-header {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.dd-section-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #0d2238;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.dd-section-hint {
+  font-size: 0.8rem;
+  color: #94a3b8;
+}
+
+.dd-count-badge {
+  background: #e0f7fa;
+  color: #00838f;
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 2px 9px;
+  border-radius: 999px;
+  margin-left: 6px;
+}
+
+/* ── ASPECT CARDS ─────────────────────────────────────────────────── */
+.dd-aspects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 12px;
+}
+
+.dd-aspect-card {
+  background: #f8fafc;
+  border-radius: 14px;
+  padding: 16px 14px 12px;
+  text-align: left;
+  border: 1px solid #e2e8f0;
+  cursor: pointer;
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+
+.dd-aspect-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.1);
+  background: #fff;
+}
+
+.dd-aspect-sentiment {
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 5px;
+}
+
+.dd-aspect-name {
+  font-size: 0.97rem;
+  font-weight: 600;
+  color: #0d2238;
+  margin-bottom: 5px;
+}
+
+.dd-aspect-mentions {
+  font-size: 0.76rem;
+  color: #94a3b8;
+  margin-bottom: 8px;
+}
+
+.dd-aspect-cta {
+  font-size: 0.78rem;
+  font-weight: 600;
+}
+
+/* ── SIMILAR ATTRACTIONS ──────────────────────────────────────────── */
+.dd-related-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 14px;
+}
+
+.dd-related-card {
+  text-decoration: none;
+  border-radius: 14px;
+  overflow: hidden;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  transition: transform 0.18s, box-shadow 0.18s;
+  display: block;
+}
+
+.dd-related-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.11);
+}
+
+.dd-related-img {
+  width: 100%;
+  height: 130px;
+  object-fit: cover;
+  display: block;
+}
+
+.dd-related-placeholder {
+  background: linear-gradient(135deg, #0077b6, #00acc1);
+}
+
+.dd-related-body {
+  padding: 12px 14px;
+}
+
+.dd-related-body h5 {
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: #0d2238;
+  margin: 0 0 4px;
+}
+
+.dd-related-body p {
+  font-size: 0.8rem;
+  color: #64748b;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+/* ── REVIEWS ──────────────────────────────────────────────────────── */
+.dd-reviews-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.dd-review-card {
+  background: #f8fafc;
+  border-radius: 12px;
+  padding: 16px 18px;
+}
+
+.dd-review-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.dd-review-meta-left {
+  display: flex;
+  gap: 12px;
+  font-size: 0.81rem;
+  color: #64748b;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.dd-review-stars {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-weight: 600;
+  color: #334155;
+}
+
+.dd-review-sentiment {
+  padding: 2px 10px;
+  border-radius: 999px;
+  font-size: 0.76rem;
+  font-weight: 600;
+}
+
+.dd-review-text {
+  margin: 0;
+  color: #334155;
+  line-height: 1.7;
+  font-size: 0.92rem;
+}
+
+/* ── SHOW MORE ────────────────────────────────────────────────────── */
+.dd-show-more-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 18px auto 0;
+  padding: 11px 28px;
+  background: #fff;
+  border: 2px solid #00acc1;
+  color: #00838f;
+  border-radius: 30px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.dd-show-more-btn:hover {
+  background: #00acc1;
+  color: #fff;
+}
+
+/* ── BACK BUTTON (bottom) ─────────────────────────────────────────── */
+.dd-back-btn {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 12px 28px;
+  background: linear-gradient(135deg, #00acc1, #0077b6);
+  color: #fff;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 4px 14px rgba(0, 172, 193, 0.3);
+}
+
+.dd-back-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 22px rgba(0, 172, 193, 0.45);
+  color: #fff;
+}
+
+/* ── RESPONSIVE ───────────────────────────────────────────────────── */
+@media (max-width: 768px) {
+  .dd-main {
+    padding: 90px 14px 48px;
+  }
+  .dd-title {
+    font-size: 1.5rem;
+  }
+  .dd-info-header {
+    padding: 18px 18px;
+  }
+  .dd-section {
+    padding: 20px 16px 18px;
+  }
+  .dd-rating-block {
+    align-items: flex-start;
+  }
+  .dd-aspects-grid {
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  }
+  .dd-related-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Keep global star rating styles working */
+.destination-details .primary-btn {
+  display: inline-block;
+  padding: 12px 28px;
+  background: linear-gradient(135deg, #00acc1, #0077b6);
+  color: #fff;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+}

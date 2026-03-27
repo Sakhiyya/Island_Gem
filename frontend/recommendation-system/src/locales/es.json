@@ -1,0 +1,174 @@
+{
+  "hero": {
+    "ariaLabel": "Sección principal mostrando los paisajes de Mauricio",
+    "titlePre": "Descubre las",
+    "titleHighlight": "Gemas",
+    "titlePost": "ocultas de Mauricio",
+    "badge": "Descubre Mauricio",
+    "subtitle": "Desde lagunas turquesas hasta aventuras en la montaña descubre experiencias diseñadas para cada viajero.",
+    "searchLabel": "Buscar destinos",
+    "searchPlaceholder": "Buscar playas, atracciones, restaurantes...",
+    "exploreBtn": "Explorar →",
+    "travelAs": "Estoy viajando como..."
+  },
+  "personas": {
+    "Family": { "label": "Familia", "desc": "Aventuras para niños" },
+    "Couple": { "label": "Pareja", "desc": "Experiencias románticas" },
+    "Solo":   { "label": "Solo",   "desc": "Exploración independiente" }
+  },
+  "stats": {
+    "attractions": "Atracciones",
+    "restaurants": "Restaurantes",
+    "travelers": "Turistas"
+  },
+  "featured": {
+    "title": "Las 10 Atracciones Más Populares",
+    "popular": "⭐ 4.8 · Popular"
+  },
+  "aiItinerary": {
+    "title": "Tu viaje perfecto a Mauricio, planificado solo para ti",
+    "desc": "Cuéntanos cómo viajas y qué te gusta — crearemos un itinerario día a día basado en reseñas reales de visitantes.",
+    "btn": "Empezar",
+    "imgAlt": "Ilustración de planificador de itinerario"
+  },
+  "planner": {
+    "badge": "Planea tu Viaje",
+    "heading1": "Tu viaje perfecto a Mauricio,",
+    "heading2": "planificado solo para ti",
+    "desc": "Cuéntanos cómo viajas y qué te gusta — crearemos un itinerario día a día basado en reseñas reales de visitantes.",
+    "s1title": "Elige tu estilo de viaje",
+    "s1sub": "Solo, pareja, familia, grupo o negocios",
+    "s2title": "Elige tus intereses",
+    "s2sub": "Playas, naturaleza, gastronomía, cultura, aventura y más",
+    "s3title": "Obtén tu plan día a día",
+    "s3sub": "Actividades personalizadas para mañana, tarde y noche",
+    "cta": "Empezar →"
+  },
+  "exploreIsland": {
+    "badge": "Descubrir Mauricio",
+    "title": "Explora la Isla",
+    "sub": "Desde playas vírgenes hasta exuberantes parques nacionales — encuentra el lugar perfecto para cada estado de ánimo",
+    "cat1label": "Playas",
+    "cat1desc": "Lagunas cristalinas y arenas blancas",
+    "cat2label": "Naturaleza",
+    "cat2desc": "Parques, gargantas, cascadas y fauna",
+    "cat3label": "Cultura",
+    "cat3desc": "Historia, templos, arte y patrimonio",
+    "cat4label": "Aventura",
+    "cat4desc": "Senderismo, buceo y deportes acuáticos",
+    "cta": "Explorar todos los destinos →"
+  },
+  "map": {
+    "title": "Explora la isla",
+    "rating": "Calificación",
+    "exploreBtn": "Explorar en el mapa →"
+  },
+  "footer": {
+    "description": "Tu puerta de entrada para descubrir los tesoros ocultos de Mauricio. Experiencias personalizadas para cada viajero.",
+    "explore": {
+      "title": "Explorar",
+      "beaches": "Playas",
+      "nature": "Parques Naturales",
+      "restaurants": "Restaurantes",
+      "culture": "Cultura e Historia",
+      "adventure": "Aventura"
+    },
+    "support": {
+      "title": "Soporte",
+      "help": "Centro de ayuda",
+      "tips": "Consejos de viaje",
+      "safety": "Información de seguridad",
+      "faq": "FAQ",
+      "contact": "Contáctanos"
+    },
+    "contact": {
+      "title": "Contacto",
+      "address": "Port Louis, Mauricio",
+      "email": "islandgems23@gmail.com",
+      "phone": "+230 123 4567"
+    },
+    "bottom": {
+      "copyright": "© 2026 Island Gems. Todos los derechos reservados.",
+      "privacy": "Política de privacidad",
+      "terms": "Términos de servicio"
+    }
+  },
+  "nav": {
+    "home": "Inicio",
+    "explore": "Explorar",
+    "planTrip": "Planear viaje",
+    "touristHub": "Centro Turístico",
+    "language": "Idioma"
+  },
+  "explore": {
+    "heroAria": "Sección principal Explore Mauritius",
+    "title": "Explora Mauricio",
+    "subtitle": "Desde lagunas turquesas hasta aventuras en la montaña descubre experiencias diseñadas para cada viajero.",
+    "searchLabel": "Buscar destinos",
+    "searchPlaceholder": "Buscar playas, comida, aventuras...",
+    "exploreMapBtn": "Explorar en el mapa",
+    "topExperiences": "Principales Experiencias",
+    "filtersAria": "Filtros de Categoría",
+    "categories": { "All": "Todos" },
+    "showing": "Mostrando",
+    "destinations": "destinos",
+    "reviews": "reseñas",
+    "viewDetails": "Ver detalles →",
+    "addFavorite": "Agregar {{title}} a favoritos",
+    "removeFavorite": "Eliminar {{title}} de favoritos",
+    "ctaTitle": "¿Listo para planear tu viaje soñado?",
+    "ctaSubtitle": "Guarda tus destinos favoritos y crea tu itinerario personalizado.",
+    "backHome": "Volver al inicio"
+  },
+  "itinerary": {
+    "heroTitle": "¡Tu aventura perfecta en Mauricio te espera!",
+    "step1": "Estilo de viaje",
+    "step2": "Intereses",
+    "step3": "Duración",
+    "step4": "Tu Plan",
+    "step1Title": "¿Cómo estás viajando?",
+    "step1Sub": "Selecciona tu estilo de viaje para recomendaciones personalizadas",
+    "step2Title": "¿Cuáles son tus intereses?",
+    "step2Sub": "Selecciona todo lo que aplique — elige al menos uno",
+    "step3Title": "¿Cuántos días te quedas?",
+    "step3Sub": "Elige un número preestablecido o ingresa el tuyo",
+    "travelTypes": {
+      "solo":     { "label": "Solo",      "desc": "Exploración independiente" },
+      "couple":   { "label": "Pareja",    "desc": "Escapada romántica" },
+      "family":   { "label": "Familia",   "desc": "Diversión para todos" },
+      "group":    { "label": "Grupo",     "desc": "Viajar con amigos" },
+      "business": { "label": "Negocios",  "desc": "Trabajo & ocio" }
+    },
+    "interests": {
+      "beaches":    "Playas & Océano",
+      "nature":     "Naturaleza & Paisajes",
+      "culture":    "Cultura & Historia",
+      "adventure":  "Aventura",
+      "food":       "Gastronomía",
+      "relaxation": "Relajación & Spa",
+      "accomm":     "Alojamiento",
+      "value":      "Relación calidad-precio"
+    },
+    "slots": {
+      "morning":   "Mañana",
+      "afternoon": "Tarde",
+      "evening":   "Noche"
+    },
+    "customDays": "O ingresa un número personalizado:",
+    "days": "días",
+    "continue": "Continuar",
+    "back": "Atrás",
+    "generating": "Generando...",
+    "generateItinerary": "Generar Itinerario",
+    "planTitle": "Tu plan de {{days}} días en Mauricio",
+    "planAnother": "Planear otro viaje",
+    "saveItinerary": "Guardar Itinerario",
+    "savedMsg": "¡Itinerario guardado en tu cuenta!",
+    "saveError": "No se pudo guardar. Por favor intenta de nuevo.",
+    "saveLogin": "Por favor inicia sesión para guardar tu itinerario.",
+    "freeDay": "Día libre — explora a tu ritmo",
+    "day": "Día",
+    "modify": "Modificar",
+    "savedSuccess": "¡Itinerario guardado con éxito!"
+  }
+}

@@ -1,0 +1,123 @@
+.tourist-dashboard {
+  padding: 120px 90px 80px;
+  background: #ecf2f4;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* HEADER */
+.dashboard-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.dashboard-header h1 {
+  font-size: 40px;
+  font-weight: 600;
+  color: #46647c;
+}
+
+.dashboard-header p {
+  max-width: 780px;
+  margin: 10px auto 0;
+  color: #5f7684;
+  line-height: 1.6;
+}
+
+/* GRID */
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+  gap: 40px;
+  align-items: start;
+}
+
+/* CARD */
+.dashboard-card {
+  background: white;
+  padding: 35px;
+  border-radius: 18px;
+  box-shadow: 0 10px 25px rgba(70, 100, 124, 0.08);
+}
+
+/* CHART CONTAINERS */
+.chart-container {
+  height: 300px;
+  width: 100%;
+}
+
+.small-chart {
+  height: 260px;
+}
+
+/* TEXT */
+.dashboard-card h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #46647c;
+  margin-bottom: 6px;
+}
+
+.chart-subtitle {
+  font-size: 14px;
+  color: #7e9aa4;
+  margin-bottom: 20px;
+}
+
+/* WIDE CARD — spans 2 columns */
+.wide-card {
+  grid-column: span 2;
+}
+
+/* KPI ROW */
+.kpi-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+.kpi-card {
+  background: white;
+  border-radius: 16px;
+  padding: 28px 24px;
+  text-align: center;
+  box-shadow: 0 6px 20px rgba(70, 100, 124, 0.08);
+}
+
+.kpi-icon {
+  font-size: 28px;
+  color: #4fc3cc;
+  margin-bottom: 12px;
+}
+
+.kpi-icon.star  { color: #f59e0b; }
+.kpi-icon.smile { color: #22c55e; }
+
+.kpi-value {
+  font-size: 36px;
+  font-weight: 700;
+  color: #46647c;
+  margin: 0;
+}
+
+.kpi-label {
+  font-size: 13px;
+  color: #7e9aa4;
+  margin: 4px 0 0;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .tourist-dashboard {
+    padding: 100px 24px 60px;
+  }
+
+  .kpi-row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .wide-card {
+    grid-column: span 1;
+  }
+}

@@ -1,0 +1,740 @@
+  /* ================= RESET DEFAULTS ================= */
+  html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  /* ================= PLAN TRIP PAGE ONLY ================= */
+  .plan-trip-page {
+    padding-top: 140px;
+    min-height: 100vh; /* ensures full viewport height */
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background: transparent !important;
+    overflow-x: hidden; /* prevents horizontal scroll */
+  }
+
+  /* HERO */
+  .plan-trip-hero {
+    text-align: center;
+    margin-bottom: 70px;
+    color: #ffffff;
+    text-shadow: 0 4px 20px rgba(0,0,0,0.6);
+  }
+
+  .plan-trip-hero h1 {
+    font-size: 56px;
+    font-weight: 700;
+    margin-bottom: 14px;
+  }
+
+  .plan-trip-hero p {
+    font-size: 20px;
+    opacity: 0.95;
+  }
+
+  /* MODERN PROGRESS INDICATOR */
+  .progress-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin: 0 auto 50px auto;
+    max-width: 600px;
+  }
+
+  .step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0.5;
+    transition: opacity 0.3s ease;
+  }
+
+  .step.active {
+    opacity: 1;
+  }
+
+  .step-circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: white;
+    border: 2px solid rgba(255,255,255,0.5);
+    transition: all 0.3s ease;
+  }
+
+  .step.active .step-circle {
+    background: linear-gradient(135deg, #39d7ec, #00acc1);
+    border-color: #00acc1;
+  }
+
+  .step-label {
+    margin-top: 8px;
+    font-size: 14px;
+    color: white;
+    text-align: center;
+  }
+
+  /* MAIN GLASS CONTAINER */
+  .plan-trip-card {
+    max-width: 900px;
+    margin: 0 auto 120px auto;
+    padding: 60px;
+    border-radius: 34px;
+
+
+    -webkit-backdrop-filter: blur(10px);
+
+  }
+
+  .step-animated {
+  animation: fadeUp 0.35s ease;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+  /* Make Step 1 persona cards transparent like interest cards */
+  .plan-trip-card.step-1 .persona-card {
+    background: rgba(255,255,255,0.15);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255,255,255,0.3);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+    transition: all 0.35s ease;
+  }
+
+  .plan-trip-card.step-1 .persona-card.active {
+    background: linear-gradient(
+      135deg,
+      rgba(38,198,218,0.45),
+      rgba(0,172,193,0.45)
+    );
+    border-color: rgba(255,255,255,0.6);
+  }
+
+  /* STEP TITLES */
+  .plan-trip-card h2 {
+    text-align: center;
+    font-size: 38px;
+    margin-bottom: 50px;
+    color: #ffffff;
+    text-shadow: 0 2px 10px rgba(0,0,0,0.5);
+  }
+
+  /* PERSONA CARDS – GLASS */
+  .persona-card,
+  .interest-card,
+  .day-card {
+    background: rgba(255,255,255,0.15);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+
+    border-radius: 16px;
+    padding: 28px;
+    border: 1px solid rgba(255,255,255,0.3);
+    cursor: pointer;
+    background-clip: padding-box;
+    
+    text-align: center;
+    transition: all 0.35s ease;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+    font-weight: 600;
+    color: #ffffff;
+  }
+
+  .persona-card:hover,
+  .interest-card:hover,
+  .day-card:hover {
+    transform: translateY(-10px) scale(1.02);
+  }
+
+  .persona-card.active,
+  .interest-card.active,
+  .day-card.active {
+    background: linear-gradient(
+      135deg,
+      rgba(38,198,218,0.45),
+      rgba(0,172,193,0.45)
+    );
+    border-color: rgba(255,255,255,0.6);
+  }
+
+  /* GRID LAYOUT */
+  .grid {
+    display: grid;
+  }
+
+  .md\:grid-cols-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .gap-6 {
+    gap: 32px;
+  }
+
+  /* STEP BUTTONS WRAPPER */
+  .step-btn-wrapper {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+  }
+
+  /* DAY SELECTOR GRID */
+  .days-selector {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 20px;
+    justify-items: center;
+    margin-bottom: 60px;
+  }
+
+  /* BUTTONS (GENERAL) */
+  .primary-btn {
+    padding: 14px 34px;
+    border-radius: 999px;
+    border: none;
+    background: linear-gradient(135deg, #26c6da, #00acc1);
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .primary-btn:hover {
+    transform: translateY(-2px);
+  }
+
+  .secondary-btn {
+    padding: 12px 30px;
+    border-radius: 999px;
+    border: 1px solid rgba(255,255,255,0.5);
+    background: rgba(255,255,255,0.2);
+    color: white;
+    cursor: pointer;
+    backdrop-filter: blur(10px);
+  }
+
+  .primary-btn,
+  .secondary-btn {
+    transform: translateY(-5px);
+  }
+
+  .primary-btn:hover,
+  .secondary-btn:hover {
+    transform: translateY(-7px);
+  }
+
+  /* ITINERARY ACTIONS */
+  .itinerary-actions {
+    display: flex;
+    gap: 16px;
+  }
+
+  /* GENERATED ITINERARY GRID */
+  .itinerary-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  /* ITINERARY DAY – FULL GLASS */
+  .itinerary-day {
+    background: rgba(255,255,255,0.15);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+
+    border-radius: 26px;
+    padding: 40px;
+    border: 1px solid rgba(255,255,255,0.3);
+    color: #ffffff;
+
+    box-shadow: 0 30px 70px rgba(0,0,0,0.35);
+    transition: all 0.3s ease;
+  }
+
+  .itinerary-day:hover {
+    transform: translateY(-6px);
+  }
+
+  .itinerary-day h3 {
+    margin-bottom: 20px;
+    font-size: 26px;
+    font-weight: 600;
+  }
+
+  /* ITINERARY LIST */
+  .itinerary-day ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .itinerary-day li {
+    padding: 12px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.25);
+    font-size: 16px;
+
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  .itinerary-day li:last-child {
+    border-bottom: none;
+  }
+
+  /* ITINERARY HEADER SPACING */
+  .itinerary-header {
+    margin-bottom: 50px;
+  }
+
+  /* RESPONSIVE FIXES */
+  @media (max-width: 900px) {
+    .md\:grid-cols-3 {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .days-selector {
+      grid-template-columns: repeat(5, 1fr);
+    }
+  }
+
+  @media (max-width: 600px) {
+    .md\:grid-cols-3 {
+      grid-template-columns: 1fr;
+    }
+
+    .days-selector {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .plan-trip-card {
+      padding: 40px 25px;
+    }
+
+    .itinerary-actions {
+      flex-direction: column;
+      align-items: flex-end;
+    }
+
+    .itinerary-day li {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+/* HERO TITLE GRADIENT ANIMATION */
+.hero-title {
+  font-size: 56px;
+  font-weight: 700;
+  background: linear-gradient(270deg, #39d7ec, #00acc1, #39d7ec);
+  background-size: 600% 600%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientMove 8s ease infinite;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* FLOATING ICONS */
+.floating-icons {
+  position: relative;
+  height: 120px;
+  margin: 40px 0;
+}
+
+.floating-icons .icon {
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  animation: float 6s ease-in-out infinite;
+}
+
+/* Randomize positions */
+.floating-icons .icon:nth-child(1) { left: 10%; animation-delay: 0s; }
+.floating-icons .icon:nth-child(2) { left: 30%; animation-delay: 1s; }
+.floating-icons .icon:nth-child(3) { left: 60%; animation-delay: 2s; }
+.floating-icons .icon:nth-child(4) { left: 80%; animation-delay: 3s; }
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+}
+
+/* BOUNCING ARROW */
+.bounce-arrow {
+  font-size: 32px;
+  animation: bounce 2s infinite;
+  cursor: pointer;
+  text-align: center;
+  margin-top: 20px;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-15px); }
+}
+
+/* ===== VIDEO BACKGROUND ===== */
+
+.plan-trip-page {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.video-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2;
+}
+
+.video-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: -1;
+}
+
+/* Content should sit above video */
+.content-wrapper {
+  position: relative;
+  z-index: 1;
+}
+
+/* PROGRESS BAR */
+.progress-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 50px;
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  opacity: 0.5;
+  transition: all 0.4s ease;
+}
+
+.step.active {
+  opacity: 1;
+}
+
+.step-circle {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.15);
+  border: 2px solid rgba(255,255,255,0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  color: #ffffff;
+  transition: all 0.4s ease;
+}
+
+.step.active .step-circle {
+  background: linear-gradient(135deg, #39d7ec, #00acc1);
+  border-color: #00acc1;
+  transform: scale(1.2);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.35);
+}
+
+.step-label {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #ffffff;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+/* ── PROGRESS BAR IMPROVEMENTS ──────────────────────── */
+
+/* Make the container accommodate connector lines */
+.progress-container {
+  align-items: flex-start !important;
+  gap: 0 !important;
+}
+
+/* Connector line between step circles */
+.step-line {
+  flex: 1;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.2);
+  margin-top: 22px;
+  transition: background 0.4s ease;
+}
+
+.step-line.filled {
+  background: linear-gradient(90deg, #39d7ec, #00acc1);
+}
+
+/* Completed step */
+.step.done {
+  opacity: 1;
+}
+
+.step.done .step-circle {
+  background: rgba(57, 215, 236, 0.15);
+  border-color: #39d7ec;
+}
+
+/* ── STEP SUBTITLE ─────────────────────────────────── */
+.step-sub {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 15px;
+  margin-top: -30px;
+  margin-bottom: 36px;
+}
+
+/* ── TRAVEL TYPE CARDS ─────────────────────────────── */
+.travel-type-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 18px;
+  margin-bottom: 40px;
+}
+
+.travel-type-card {
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1.5px solid rgba(255, 255, 255, 0.25);
+  border-radius: 18px;
+  padding: 28px 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.travel-type-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(57, 215, 236, 0.5);
+}
+
+.travel-type-card.active {
+  background: linear-gradient(135deg, rgba(38, 198, 218, 0.4), rgba(0, 172, 193, 0.4));
+  border-color: #39d7ec;
+  box-shadow: 0 0 24px rgba(57, 215, 236, 0.3);
+}
+
+.tt-icon {
+  font-size: 30px;
+  color: #39d7ec;
+}
+
+.tt-label {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.tt-desc {
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.6);
+  text-align: center;
+}
+
+/* ── INTERESTS GRID ────────────────────────────────── */
+.interests-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+  margin-bottom: 40px;
+}
+
+.interest-card {
+  position: relative;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  gap: 10px !important;
+  padding: 22px 12px !important;
+  font-size: 13px !important;
+}
+
+.interest-icon {
+  font-size: 26px;
+  color: #39d7ec;
+}
+
+.check-badge {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: #39d7ec;
+  color: #0f172a;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+/* ── DAYS SELECTOR (5 presets) ─────────────────────── */
+.days-selector {
+  grid-template-columns: repeat(5, 1fr) !important;
+  margin-bottom: 24px !important;
+}
+
+/* ── CUSTOM DAYS INPUT ─────────────────────────────── */
+.custom-days-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.custom-days-input {
+  width: 86px;
+  padding: 10px 14px;
+  border-radius: 12px;
+  border: 1.5px solid rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.12);
+  color: white;
+  font-size: 15px;
+  text-align: center;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.custom-days-input:focus,
+.custom-days-input.active {
+  border-color: #39d7ec;
+}
+
+.custom-days-input::placeholder {
+  color: rgba(255, 255, 255, 0.35);
+}
+
+/* ── ERROR MESSAGE ─────────────────────────────────── */
+.error-msg {
+  text-align: center;
+  color: #f87171;
+  font-size: 14px;
+  margin: 8px 0 16px;
+}
+
+/* ── ITINERARY RESULT ──────────────────────────────── */
+.itinerary-day h3 {
+  display: flex;
+  align-items: center;
+}
+
+.free-day {
+  color: rgba(255, 255, 255, 0.45);
+  font-style: italic;
+  padding: 8px 0;
+  font-size: 15px;
+}
+
+.att-slot {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  color: #39d7ec;
+  font-weight: 700;
+  min-width: 72px;
+  flex-shrink: 0;
+}
+
+.att-details {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  flex: 1;
+}
+
+.att-name {
+  font-size: 15px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}
+
+.att-meta {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.55);
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+/* ── SAVE STATUS ───────────────────────────────────── */
+.save-msg {
+  font-size: 14px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: 500;
+}
+
+.save-msg.success {
+  background: rgba(34, 197, 94, 0.2);
+  color: #86efac;
+}
+
+.save-msg.error {
+  background: rgba(239, 68, 68, 0.2);
+  color: #fca5a5;
+}
+
+/* ── RESPONSIVE ────────────────────────────────────── */
+@media (max-width: 700px) {
+  .interests-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .travel-type-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .days-selector {
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+}

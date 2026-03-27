@@ -1,0 +1,174 @@
+{
+  "hero": {
+    "ariaLabel": "Hero section showing Mauritius scenery",
+    "titlePre": "Uncover the Hidden",
+    "titleHighlight": "Gems",
+    "titlePost": "of Mauritius",
+    "badge": "Discover Mauritius",
+    "subtitle": "From turquoise lagoons to mountain adventures discover experiences crafted for every traveler.",
+    "searchLabel": "Search destinations",
+    "searchPlaceholder": "Search beaches, attractions, restaurants...",
+    "exploreBtn": "Explore →",
+    "travelAs": "I'm traveling as..."
+  },
+  "personas": {
+    "Family": { "label": "Family", "desc": "Kid-friendly adventures" },
+    "Couple": { "label": "Couple", "desc": "Romantic experiences" },
+    "Solo": { "label": "Solo", "desc": "Independent exploration" }
+  },
+  "stats": {
+    "attractions": "Attractions",
+    "restaurants": "Restaurants",
+    "travelers": "Travelers"
+  },
+  "featured": {
+    "title": "Top 10 Trending Attractions",
+    "popular": "⭐ 4.8 · Popular"
+  },
+  "aiItinerary": {
+    "title": "Your Perfect Mauritius Trip, Planned Just for You",
+    "desc": "Tell us how you travel and what you love — we'll build a full day-by-day itinerary ranked by real visitor reviews and ratings.",
+    "btn": "Start Planning",
+    "imgAlt": "Itinerary planner illustration"
+  },
+  "planner": {
+    "badge": "Plan Your Trip",
+    "heading1": "Your Perfect Mauritius Trip,",
+    "heading2": "Planned Just for You",
+    "desc": "Tell us how you travel and what you love — we'll build a full day-by-day itinerary ranked by real visitor reviews and ratings.",
+    "s1title": "Choose your travel style",
+    "s1sub": "Solo, couple, family, group or business",
+    "s2title": "Pick your interests",
+    "s2sub": "Beaches, nature, food, culture, adventure and more",
+    "s3title": "Get your day-by-day plan",
+    "s3sub": "Personalised morning, afternoon and evening activities",
+    "cta": "Start Planning →"
+  },
+  "exploreIsland": {
+    "badge": "Discover Mauritius",
+    "title": "Explore the Island",
+    "sub": "From pristine beaches to lush national parks — find the perfect spot for every mood",
+    "cat1label": "Beaches",
+    "cat1desc": "Crystal lagoons & white sand shores",
+    "cat2label": "Nature",
+    "cat2desc": "Parks, gorges, waterfalls & wildlife",
+    "cat3label": "Culture",
+    "cat3desc": "History, temples, art & heritage",
+    "cat4label": "Adventure",
+    "cat4desc": "Hiking, diving & water sports",
+    "cta": "Explore All Destinations →"
+  },
+  "map": {
+    "title": "Explore the Island",
+    "rating": "Rating",
+    "exploreBtn": "Explore on Map →"
+  },
+  "footer": {
+    "description": "Your gateway to discovering the hidden treasures of Mauritius. Personalized experiences for every traveler.",
+    "explore": {
+      "title": "Explore",
+      "beaches": "Beaches",
+      "nature": "Nature Parks",
+      "restaurants": "Restaurants",
+      "culture": "Culture & History",
+      "adventure": "Adventure"
+    },
+    "support": {
+      "title": "Support",
+      "help": "Help Center",
+      "tips": "Travel Tips",
+      "safety": "Safety Information",
+      "faq": "FAQ",
+      "contact": "Contact Us"
+    },
+    "contact": {
+      "title": "Contact",
+      "address": "Port Louis, Mauritius",
+      "email": "islandgems23@gmail.com",
+      "phone": "+230 123 4567"
+    },
+    "bottom": {
+      "copyright": "© 2026 Island Gems. All rights reserved.",
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Service"
+    }
+  },
+  "nav": {
+    "home": "Home",
+    "explore": "Explore",
+    "planTrip": "Plan Trip",
+    "touristHub": "Tourist Hub",
+    "language": "Language"
+  },
+  "explore": {
+    "heroAria": "Explore Mauritius hero section",
+    "title": "Explore Mauritius",
+    "subtitle": "From turquoise lagoons to mountain adventures discover experiences crafted for every traveler.",
+    "searchLabel": "Search destinations",
+    "searchPlaceholder": "Search beaches, food, adventures...",
+    "exploreMapBtn": "Explore on Map",
+    "topExperiences": "Top Experiences",
+    "filtersAria": "Category Filters",
+    "categories": { "All": "All" },
+    "showing": "Showing",
+    "destinations": "destinations",
+    "reviews": "reviews",
+    "viewDetails": "View Details →",
+    "addFavorite": "Add {{title}} to favorites",
+    "removeFavorite": "Remove {{title}} from favorites",
+    "ctaTitle": "Ready to plan your dream trip?",
+    "ctaSubtitle": "Save your favorite destinations and build your personalized itinerary.",
+    "backHome": "Back to Home"
+  },
+  "itinerary": {
+    "heroTitle": "Your Perfect Mauritius Adventure Awaits!",
+    "step1": "Travel Type",
+    "step2": "Interests",
+    "step3": "Duration",
+    "step4": "Your Plan",
+    "step1Title": "How are you travelling?",
+    "step1Sub": "Select your travel style for personalised recommendations",
+    "step2Title": "What are your interests?",
+    "step2Sub": "Select all that apply — choose at least one",
+    "step3Title": "How many days are you staying?",
+    "step3Sub": "Choose a preset or enter your own number of days",
+    "travelTypes": {
+      "solo":     { "label": "Solo",     "desc": "Independent exploration" },
+      "couple":   { "label": "Couple",   "desc": "Romantic getaway" },
+      "family":   { "label": "Family",   "desc": "Fun for all ages" },
+      "group":    { "label": "Group",    "desc": "Travel with friends" },
+      "business": { "label": "Business", "desc": "Work & leisure" }
+    },
+    "interests": {
+      "beaches":    "Beaches & Ocean",
+      "nature":     "Nature & Scenery",
+      "culture":    "Culture & History",
+      "adventure":  "Adventure",
+      "food":       "Food & Dining",
+      "relaxation": "Relaxation & Spa",
+      "accomm":     "Accommodation",
+      "value":      "Value for Money"
+    },
+    "slots": {
+      "morning":   "Morning",
+      "afternoon": "Afternoon",
+      "evening":   "Evening"
+    },
+    "customDays": "Or enter custom:",
+    "days": "days",
+    "continue": "Continue",
+    "back": "Back",
+    "generating": "Generating...",
+    "generateItinerary": "Generate Itinerary",
+    "planTitle": "Your {{days}}-Day Mauritius Plan",
+    "planAnother": "Plan Another Trip",
+    "saveItinerary": "Save Itinerary",
+    "savedMsg": "Itinerary saved to your account!",
+    "saveError": "Could not save. Please try again.",
+    "saveLogin": "Please log in to save your itinerary.",
+    "freeDay": "Free day — explore at your own pace",
+    "day": "Day",
+    "modify": "Modify",
+    "savedSuccess": "Itinerary saved successfully!"
+  }
+}

@@ -1,0 +1,156 @@
+/* ================= Explore Page ================= */
+
+/* Grid for destination cards */
+.explore-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+/* Each card */
+.explore-card {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  position: relative;
+}
+
+.explore-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+/* Card image */
+.explore-card-img {
+  height: 150px;
+  background-color: #ddd;
+  position: relative;
+}
+
+.card-tag {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  background: rgba(255,255,255,0.9);
+  padding: 4px 8px;
+  border-radius: 8px;
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+
+/* Card body */
+.card-body {
+  padding: 15px;
+}
+
+.card-body h4 {
+  margin: 0 0 5px;
+  font-size: 1.1rem;
+}
+
+.card-body p {
+  margin: 0 0 5px;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Card meta */
+.card-meta {
+  font-size: 0.8rem;
+  color: #888;
+  margin-bottom: 10px;
+}
+
+/* Star favorite button */
+.favorite-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: color 0.2s ease;
+  color: #ccc;
+}
+
+.favorite-btn.active {
+  color: gold; /* Filled star */
+}
+
+.favorite-btn:hover {
+  color: gold;
+}
+
+/* ================= Accessibility Improvements ================= */
+
+/* Skip to main content link — visually hidden until focused */
+.skip-to-content {
+  position: absolute;
+  top: -100px;
+  left: 16px;
+  z-index: 9999;
+  background: #26c6da;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: top 0.2s;
+}
+.skip-to-content:focus {
+  top: 16px;
+}
+
+/* Focus visibility */
+button:focus-visible,
+a:focus-visible,
+input:focus-visible {
+  outline: 3px solid #ff9800;
+  outline-offset: 2px;
+}
+
+/* Make sure filter buttons look clickable */
+.filter-btn {
+  cursor: pointer;
+}
+
+/* Ensure buttons inherit text styling if needed */
+button {
+  font: inherit;
+}
+
+/* ================= Autocomplete Dropdown ================= */
+.autocomplete-list {
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0;
+  right: 0;
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  list-style: none;
+  margin: 0;
+  padding: 6px 0;
+  z-index: 1000;
+  max-height: 320px;
+  overflow-y: auto;
+}
+
+.autocomplete-option {
+  padding: 10px 16px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  color: #1e293b;
+  transition: background 0.15s;
+}
+
+.autocomplete-option:hover,
+.autocomplete-option.active {
+  background: #f0fdff;
+  color: #00acc1;
+}

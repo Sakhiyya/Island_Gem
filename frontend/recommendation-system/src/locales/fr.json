@@ -1,0 +1,174 @@
+{
+  "hero": {
+    "ariaLabel": "Section principale montrant les paysages de Maurice",
+    "titlePre": "Découvrez les",
+    "titleHighlight": "trésors",
+    "titlePost": "cachés de Maurice",
+    "badge": "Découvrir Maurice",
+    "subtitle": "Des lagons turquoise aux aventures en montagne découvrez des expériences conçues pour chaque voyageur.",
+    "searchLabel": "Rechercher des destinations",
+    "searchPlaceholder": "Recherchez plages, attractions, restaurants...",
+    "exploreBtn": "Explorer →",
+    "travelAs": "Je voyage en tant que..."
+  },
+  "personas": {
+    "Family": { "label": "Famille", "desc": "Aventures adaptées aux enfants" },
+    "Couple": { "label": "Couple", "desc": "Expériences romantiques" },
+    "Solo": { "label": "Seul", "desc": "Exploration indépendante" }
+  },
+  "stats": {
+    "attractions": "Attractions",
+    "restaurants": "Restaurants",
+    "travelers": "Voyageurs"
+  },
+  "featured": {
+    "title": "Top 10 Attractions Tendance",
+    "popular": "⭐ 4.8 · Populaire"
+  },
+  "aiItinerary": {
+    "title": "Votre voyage parfait à Maurice, planifié rien que pour vous",
+    "desc": "Dites-nous comment vous voyagez et ce que vous aimez — nous créerons un itinéraire jour par jour basé sur les avis de vrais visiteurs.",
+    "btn": "Commencer",
+    "imgAlt": "Illustration de planificateur d'itinéraire"
+  },
+  "planner": {
+    "badge": "Planifier le Voyage",
+    "heading1": "Votre voyage parfait à Maurice,",
+    "heading2": "planifié rien que pour vous",
+    "desc": "Dites-nous comment vous voyagez et ce que vous aimez — nous créerons un itinéraire jour par jour basé sur les avis de vrais visiteurs.",
+    "s1title": "Choisissez votre style de voyage",
+    "s1sub": "Seul, en couple, en famille, en groupe ou en affaires",
+    "s2title": "Choisissez vos intérêts",
+    "s2sub": "Plages, nature, gastronomie, culture, aventure et plus",
+    "s3title": "Obtenez votre plan jour par jour",
+    "s3sub": "Activités personnalisées pour le matin, l'après-midi et le soir",
+    "cta": "Commencer →"
+  },
+  "exploreIsland": {
+    "badge": "Découvrir Maurice",
+    "title": "Explorez l'île",
+    "sub": "Des plages immaculées aux parcs nationaux verdoyants — trouvez l'endroit parfait pour chaque humeur",
+    "cat1label": "Plages",
+    "cat1desc": "Lagons cristallins et rivages de sable blanc",
+    "cat2label": "Nature",
+    "cat2desc": "Parcs, gorges, cascades et faune",
+    "cat3label": "Culture",
+    "cat3desc": "Histoire, temples, art et patrimoine",
+    "cat4label": "Aventure",
+    "cat4desc": "Randonnée, plongée et sports nautiques",
+    "cta": "Explorer toutes les destinations →"
+  },
+  "map": {
+    "title": "Explorez l'île",
+    "rating": "Évaluation",
+    "exploreBtn": "Explorer sur la carte →"
+  },
+  "footer": {
+    "description": "Votre portail pour découvrir les trésors cachés de Maurice. Des expériences personnalisées pour chaque voyageur.",
+    "explore": {
+      "title": "Explorer",
+      "beaches": "Plages",
+      "nature": "Parcs Naturels",
+      "restaurants": "Restaurants",
+      "culture": "Culture & Histoire",
+      "adventure": "Aventure"
+    },
+    "support": {
+      "title": "Assistance",
+      "help": "Centre d'aide",
+      "tips": "Conseils de voyage",
+      "safety": "Informations de sécurité",
+      "faq": "FAQ",
+      "contact": "Contactez-nous"
+    },
+    "contact": {
+      "title": "Contact",
+      "address": "Port Louis, Maurice",
+      "email": "islandgems23@gmail.com",
+      "phone": "+230 123 4567"
+    },
+    "bottom": {
+      "copyright": "© 2026 Island Gems. Tous droits réservés.",
+      "privacy": "Politique de confidentialité",
+      "terms": "Conditions d'utilisation"
+    }
+  },
+  "nav": {
+    "home": "Accueil",
+    "explore": "Explorer",
+    "planTrip": "Planifier le voyage",
+    "touristHub": "Espace Voyageur",
+    "language": "Langue"
+  },
+  "explore": {
+    "heroAria": "Section héros Explore Mauritius",
+    "title": "Explorez Maurice",
+    "subtitle": "Des lagons turquoise aux aventures en montagne découvrez des expériences conçues pour chaque voyageur.",
+    "searchLabel": "Rechercher des destinations",
+    "searchPlaceholder": "Recherchez plages, nourriture, aventures...",
+    "exploreMapBtn": "Explorer sur la carte",
+    "topExperiences": "Meilleures expériences",
+    "filtersAria": "Filtres de catégorie",
+    "categories": { "All": "Toutes" },
+    "showing": "Affichage de",
+    "destinations": "destinations",
+    "reviews": "avis",
+    "viewDetails": "Voir les détails →",
+    "addFavorite": "Ajouter {{title}} aux favoris",
+    "removeFavorite": "Retirer {{title}} des favoris",
+    "ctaTitle": "Prêt à planifier votre voyage de rêve ?",
+    "ctaSubtitle": "Enregistrez vos destinations préférées et créez votre itinéraire personnalisé.",
+    "backHome": "Retour à l'accueil"
+  },
+  "itinerary": {
+    "heroTitle": "Votre aventure parfaite à Maurice vous attend !",
+    "step1": "Type de voyage",
+    "step2": "Intérêts",
+    "step3": "Durée",
+    "step4": "Votre Plan",
+    "step1Title": "Comment voyagez-vous ?",
+    "step1Sub": "Sélectionnez votre style de voyage pour des recommandations personnalisées",
+    "step2Title": "Quels sont vos intérêts ?",
+    "step2Sub": "Sélectionnez tout ce qui s'applique — choisissez au moins un",
+    "step3Title": "Combien de jours restez-vous ?",
+    "step3Sub": "Choisissez un préréglage ou entrez votre propre nombre de jours",
+    "travelTypes": {
+      "solo":     { "label": "Seul",     "desc": "Exploration indépendante" },
+      "couple":   { "label": "Couple",   "desc": "Escapade romantique" },
+      "family":   { "label": "Famille",  "desc": "Amusement pour tous" },
+      "group":    { "label": "Groupe",   "desc": "Voyager avec des amis" },
+      "business": { "label": "Affaires", "desc": "Travail & loisirs" }
+    },
+    "interests": {
+      "beaches":    "Plages & Océan",
+      "nature":     "Nature & Paysages",
+      "culture":    "Culture & Histoire",
+      "adventure":  "Aventure",
+      "food":       "Gastronomie",
+      "relaxation": "Détente & Spa",
+      "accomm":     "Hébergement",
+      "value":      "Rapport qualité-prix"
+    },
+    "slots": {
+      "morning":   "Matin",
+      "afternoon": "Après-midi",
+      "evening":   "Soir"
+    },
+    "customDays": "Ou entrez un nombre personnalisé :",
+    "days": "jours",
+    "continue": "Continuer",
+    "back": "Retour",
+    "generating": "Génération en cours...",
+    "generateItinerary": "Générer l'itinéraire",
+    "planTitle": "Votre plan de {{days}} jours à Maurice",
+    "planAnother": "Planifier un autre voyage",
+    "saveItinerary": "Enregistrer l'itinéraire",
+    "savedMsg": "Itinéraire enregistré dans votre compte !",
+    "saveError": "Impossible d'enregistrer. Veuillez réessayer.",
+    "saveLogin": "Veuillez vous connecter pour enregistrer votre itinéraire.",
+    "freeDay": "Journée libre — explorez à votre rythme",
+    "day": "Jour",
+    "modify": "Modifier",
+    "savedSuccess": "Itinéraire enregistré avec succès !"
+  }
+}

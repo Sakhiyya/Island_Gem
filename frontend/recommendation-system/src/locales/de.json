@@ -1,0 +1,174 @@
+{
+  "hero": {
+    "ariaLabel": "Hero-Bereich mit Szenen aus Mauritius",
+    "titlePre": "Entdecke die verborgenen",
+    "titleHighlight": "Schätze",
+    "titlePost": "von Mauritius",
+    "badge": "Entdecke Mauritius",
+    "subtitle": "Von türkisblauen Lagunen bis zu Bergabenteuern entdecke Erlebnisse für jeden Reisenden.",
+    "searchLabel": "Reiseziele suchen",
+    "searchPlaceholder": "Strände, Sehenswürdigkeiten, Restaurants suchen...",
+    "exploreBtn": "Entdecken →",
+    "travelAs": "Ich reise als..."
+  },
+  "personas": {
+    "Family": { "label": "Familie", "desc": "Kinderfreundliche Abenteuer" },
+    "Couple": { "label": "Paar",    "desc": "Romantische Erlebnisse" },
+    "Solo":   { "label": "Allein",  "desc": "Unabhängige Erkundung" }
+  },
+  "stats": {
+    "attractions": "Sehenswürdigkeiten",
+    "restaurants": "Restaurants",
+    "travelers": "Reisende"
+  },
+  "featured": {
+    "title": "Top 10 Trendige Attraktionen",
+    "popular": "⭐ 4.8 · Beliebt"
+  },
+  "aiItinerary": {
+    "title": "Deine perfekte Mauritius-Reise, speziell für dich geplant",
+    "desc": "Sag uns, wie du reist und was du liebst — wir erstellen einen täglichen Reiseplan basierend auf echten Besucherbewertungen.",
+    "btn": "Jetzt planen",
+    "imgAlt": "Illustration Reiseplaner"
+  },
+  "planner": {
+    "badge": "Reise Planen",
+    "heading1": "Deine perfekte Mauritius-Reise,",
+    "heading2": "speziell für dich geplant",
+    "desc": "Sag uns, wie du reist und was du liebst — wir erstellen einen täglichen Reiseplan basierend auf echten Besucherbewertungen.",
+    "s1title": "Wähle deinen Reisestil",
+    "s1sub": "Allein, Paar, Familie, Gruppe oder Geschäft",
+    "s2title": "Wähle deine Interessen",
+    "s2sub": "Strände, Natur, Essen, Kultur, Abenteuer und mehr",
+    "s3title": "Erhalte deinen Tagesplan",
+    "s3sub": "Personalisierte Morgen-, Mittags- und Abendaktivitäten",
+    "cta": "Jetzt planen →"
+  },
+  "exploreIsland": {
+    "badge": "Mauritius Entdecken",
+    "title": "Die Insel Erkunden",
+    "sub": "Von unberührten Stränden bis zu üppigen Nationalparks — finde den perfekten Ort für jede Stimmung",
+    "cat1label": "Strände",
+    "cat1desc": "Kristallklare Lagunen & weiße Sandstrände",
+    "cat2label": "Natur",
+    "cat2desc": "Parks, Schluchten, Wasserfälle & Tierwelt",
+    "cat3label": "Kultur",
+    "cat3desc": "Geschichte, Tempel, Kunst & Erbe",
+    "cat4label": "Abenteuer",
+    "cat4desc": "Wandern, Tauchen & Wassersport",
+    "cta": "Alle Ziele erkunden →"
+  },
+  "map": {
+    "title": "Erkunde die Insel",
+    "rating": "Bewertung",
+    "exploreBtn": "Auf der Karte erkunden →"
+  },
+  "footer": {
+    "description": "Dein Tor zu den verborgenen Schätzen von Mauritius. Personalisierte Erlebnisse für jeden Reisenden.",
+    "explore": {
+      "title": "Entdecken",
+      "beaches": "Strände",
+      "nature": "Naturparks",
+      "restaurants": "Restaurants",
+      "culture": "Kultur & Geschichte",
+      "adventure": "Abenteuer"
+    },
+    "support": {
+      "title": "Support",
+      "help": "Hilfe-Center",
+      "tips": "Reisetipps",
+      "safety": "Sicherheitsinformationen",
+      "faq": "FAQ",
+      "contact": "Kontaktieren Sie uns"
+    },
+    "contact": {
+      "title": "Kontakt",
+      "address": "Port Louis, Mauritius",
+      "email": "islandgems23@gmail.com",
+      "phone": "+230 123 4567"
+    },
+    "bottom": {
+      "copyright": "© 2026 Island Gems. Alle Rechte vorbehalten.",
+      "privacy": "Datenschutzrichtlinie",
+      "terms": "Nutzungsbedingungen"
+    }
+  },
+  "nav": {
+    "home": "Startseite",
+    "explore": "Entdecken",
+    "planTrip": "Reise planen",
+    "touristHub": "Touristen-Hub",
+    "language": "Sprache"
+  },
+  "explore": {
+    "heroAria": "Explore Mauritius Hero-Bereich",
+    "title": "Entdecke Mauritius",
+    "subtitle": "Von türkisblauen Lagunen bis zu Bergabenteuern erlebe Erlebnisse für jeden Reisenden.",
+    "searchLabel": "Reiseziele suchen",
+    "searchPlaceholder": "Strände, Essen, Abenteuer suchen...",
+    "exploreMapBtn": "Auf der Karte erkunden",
+    "topExperiences": "Top-Erlebnisse",
+    "filtersAria": "Kategoriefilter",
+    "categories": { "All": "Alle" },
+    "showing": "Anzeigen",
+    "destinations": "Reiseziele",
+    "reviews": "Bewertungen",
+    "viewDetails": "Details ansehen →",
+    "addFavorite": "{{title}} zu Favoriten hinzufügen",
+    "removeFavorite": "{{title}} aus Favoriten entfernen",
+    "ctaTitle": "Bereit, deine Traumreise zu planen?",
+    "ctaSubtitle": "Speichere deine Lieblingsziele und erstelle deine persönliche Reiseroute.",
+    "backHome": "Zurück zur Startseite"
+  },
+  "itinerary": {
+    "heroTitle": "Dein perfektes Mauritius-Abenteuer wartet!",
+    "step1": "Reisestil",
+    "step2": "Interessen",
+    "step3": "Dauer",
+    "step4": "Dein Plan",
+    "step1Title": "Wie reist du?",
+    "step1Sub": "Wähle deinen Reisestil für personalisierte Empfehlungen",
+    "step2Title": "Was sind deine Interessen?",
+    "step2Sub": "Wähle alles Zutreffende — mindestens eine Auswahl",
+    "step3Title": "Wie viele Tage bleibst du?",
+    "step3Sub": "Wähle eine Vorgabe oder gib deine eigene Anzahl an Tagen ein",
+    "travelTypes": {
+      "solo":     { "label": "Allein",    "desc": "Unabhängige Erkundung" },
+      "couple":   { "label": "Paar",      "desc": "Romantischer Kurzurlaub" },
+      "family":   { "label": "Familie",   "desc": "Spaß für alle Altersgruppen" },
+      "group":    { "label": "Gruppe",    "desc": "Mit Freunden reisen" },
+      "business": { "label": "Geschäft",  "desc": "Arbeit & Freizeit" }
+    },
+    "interests": {
+      "beaches":    "Strände & Ozean",
+      "nature":     "Natur & Landschaft",
+      "culture":    "Kultur & Geschichte",
+      "adventure":  "Abenteuer",
+      "food":       "Essen & Trinken",
+      "relaxation": "Entspannung & Spa",
+      "accomm":     "Unterkunft",
+      "value":      "Preis-Leistungs-Verhältnis"
+    },
+    "slots": {
+      "morning":   "Morgen",
+      "afternoon": "Nachmittag",
+      "evening":   "Abend"
+    },
+    "customDays": "Oder eigene Anzahl eingeben:",
+    "days": "Tage",
+    "continue": "Weiter",
+    "back": "Zurück",
+    "generating": "Wird erstellt...",
+    "generateItinerary": "Reiseroute erstellen",
+    "planTitle": "Dein {{days}}-Tage-Plan für Mauritius",
+    "planAnother": "Eine weitere Reise planen",
+    "saveItinerary": "Reiseroute speichern",
+    "savedMsg": "Reiseroute in deinem Konto gespeichert!",
+    "saveError": "Konnte nicht gespeichert werden. Bitte versuche es erneut.",
+    "saveLogin": "Bitte melde dich an, um deine Reiseroute zu speichern.",
+    "freeDay": "Freier Tag — erkunde nach eigenem Tempo",
+    "day": "Tag",
+    "modify": "Bearbeiten",
+    "savedSuccess": "Reiseroute erfolgreich gespeichert!"
+  }
+}

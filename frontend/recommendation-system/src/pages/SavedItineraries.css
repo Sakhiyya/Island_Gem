@@ -1,0 +1,187 @@
+/* ── Page layout ─────────────────────────────────────────────────────────── */
+.saved-page {
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.saved-wrapper {
+  position: relative;
+  z-index: 2;
+  max-width: 960px;
+  margin: 100px auto 60px;
+  padding: 0 20px;
+  width: 100%;
+}
+
+/* ── Page heading row ────────────────────────────────────────────────────── */
+.saved-header-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 32px;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.saved-header-row h1 {
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+/* ── Status / empty state ────────────────────────────────────────────────── */
+.saved-status {
+  color: rgba(255, 255, 255, 0.75);
+  text-align: center;
+  font-size: 1rem;
+  margin-top: 60px;
+}
+.saved-status.error { color: #f87171; }
+
+.saved-empty {
+  text-align: center;
+  padding: 80px 20px;
+  color: rgba(255, 255, 255, 0.6);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+.saved-empty p { font-size: 1.1rem; margin: 0; }
+
+/* ── Card list ───────────────────────────────────────────────────────────── */
+.saved-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.saved-card {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 16px;
+  overflow: hidden;
+  transition: border-color 0.2s;
+}
+.saved-card:hover { border-color: rgba(57, 215, 236, 0.4); }
+
+/* ── Card top (summary / click to expand) ───────────────────────────────── */
+.saved-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 24px;
+  cursor: pointer;
+  gap: 16px;
+}
+
+.saved-card-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  flex: 1;
+}
+
+.saved-trip-title {
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.saved-meta {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.82rem;
+  display: flex;
+  align-items: center;
+}
+
+.saved-interests {
+  color: #39d7ec;
+  font-size: 0.78rem;
+  text-transform: capitalize;
+}
+
+/* ── Card actions (delete + expand icon) ─────────────────────────────────── */
+.saved-card-actions {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-shrink: 0;
+}
+
+.delete-btn {
+  background: rgba(248, 113, 113, 0.15);
+  border: 1px solid rgba(248, 113, 113, 0.35);
+  color: #f87171;
+  border-radius: 8px;
+  padding: 7px 10px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  transition: background 0.2s;
+}
+.delete-btn:hover { background: rgba(248, 113, 113, 0.3); }
+.delete-btn:disabled { opacity: 0.4; cursor: not-allowed; }
+
+.expand-icon {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.9rem;
+}
+
+/* ── Card body (day-by-day plan) ─────────────────────────────────────────── */
+.saved-card-body {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 24px;
+}
+
+.saved-itinerary-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.saved-day-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 16px;
+}
+
+.saved-day-card h3 {
+  color: #fff;
+  font-size: 0.95rem;
+  font-weight: 700;
+  margin: 0 0 12px;
+  display: flex;
+  align-items: center;
+}
+
+.saved-day-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.free-day {
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 0.85rem;
+  font-style: italic;
+}
+
+/* reuse att-slot / att-details / att-name / att-meta from Itinerary.css */
+
+/* ── Responsive ──────────────────────────────────────────────────────────── */
+@media (max-width: 600px) {
+  .saved-header-row { flex-direction: column; align-items: flex-start; }
+  .saved-card-top   { flex-direction: column; align-items: flex-start; }
+  .saved-card-actions { align-self: flex-end; }
+  .saved-itinerary-grid { grid-template-columns: 1fr; }
+}

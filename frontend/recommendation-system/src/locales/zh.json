@@ -1,0 +1,174 @@
+{
+  "hero": {
+    "ariaLabel": "显示毛里求斯风景的主区域",
+    "titlePre": "探索毛里求斯隐藏的",
+    "titleHighlight": "宝藏",
+    "titlePost": "",
+    "badge": "探索毛里求斯",
+    "subtitle": "从蓝色湖泊到山脉冒险探索为每位游客设计的体验。",
+    "searchLabel": "搜索目的地",
+    "searchPlaceholder": "搜索海滩、景点、餐厅...",
+    "exploreBtn": "探索 →",
+    "travelAs": "我的旅行方式是..."
+  },
+  "personas": {
+    "Family": { "label": "家庭", "desc": "适合孩子的冒险" },
+    "Couple": { "label": "情侣", "desc": "浪漫体验" },
+    "Solo":   { "label": "独自", "desc": "独立探索" }
+  },
+  "stats": {
+    "attractions": "景点",
+    "restaurants": "餐厅",
+    "travelers": "游客"
+  },
+  "featured": {
+    "title": "十大热门景点",
+    "popular": "⭐ 4.8 · 热门"
+  },
+  "aiItinerary": {
+    "title": "您完美的毛里求斯之旅，专为您量身定制",
+    "desc": "告诉我们您的旅行方式和喜好 — 我们将根据真实访客评价为您制定每日行程。",
+    "btn": "开始规划",
+    "imgAlt": "行程规划器插图"
+  },
+  "planner": {
+    "badge": "规划您的旅行",
+    "heading1": "您完美的毛里求斯之旅，",
+    "heading2": "专为您量身定制",
+    "desc": "告诉我们您的旅行方式和喜好 — 我们将根据真实访客评价为您制定每日行程。",
+    "s1title": "选择您的旅行方式",
+    "s1sub": "独自、情侣、家庭、团体或商务",
+    "s2title": "选择您的兴趣",
+    "s2sub": "海滩、自然、美食、文化、探险等",
+    "s3title": "获取您的每日计划",
+    "s3sub": "个性化的早晨、下午和晚间活动",
+    "cta": "开始规划 →"
+  },
+  "exploreIsland": {
+    "badge": "探索毛里求斯",
+    "title": "探索岛屿",
+    "sub": "从原始海滩到茂密的国家公园 — 找到适合每种心情的完美去处",
+    "cat1label": "海滩",
+    "cat1desc": "水晶泻湖与白沙海岸",
+    "cat2label": "自然",
+    "cat2desc": "公园、峡谷、瀑布与野生动物",
+    "cat3label": "文化",
+    "cat3desc": "历史、寺庙、艺术与遗产",
+    "cat4label": "探险",
+    "cat4desc": "徒步、潜水与水上运动",
+    "cta": "探索所有目的地 →"
+  },
+  "map": {
+    "title": "探索岛屿",
+    "rating": "评分",
+    "exploreBtn": "在地图上探索 →"
+  },
+  "footer": {
+    "description": "带你发现毛里求斯的隐藏宝藏。为每位游客提供个性化体验。",
+    "explore": {
+      "title": "探索",
+      "beaches": "海滩",
+      "nature": "自然公园",
+      "restaurants": "餐厅",
+      "culture": "文化与历史",
+      "adventure": "探险"
+    },
+    "support": {
+      "title": "支持",
+      "help": "帮助中心",
+      "tips": "旅行建议",
+      "safety": "安全信息",
+      "faq": "常见问题",
+      "contact": "联系我们"
+    },
+    "contact": {
+      "title": "联系",
+      "address": "毛里求斯 路易港",
+      "email": "islandgems23@gmail.com",
+      "phone": "+230 123 4567"
+    },
+    "bottom": {
+      "copyright": "© 2026 Island Gems. 保留所有权利。",
+      "privacy": "隐私政策",
+      "terms": "服务条款"
+    }
+  },
+  "nav": {
+    "home": "首页",
+    "explore": "探索",
+    "planTrip": "计划行程",
+    "touristHub": "游客中心",
+    "language": "语言"
+  },
+  "explore": {
+    "heroAria": "Explore Mauritius 主区域",
+    "title": "探索毛里求斯",
+    "subtitle": "从碧绿的泻湖到山地探险体验为每位游客打造的旅行活动。",
+    "searchLabel": "搜索目的地",
+    "searchPlaceholder": "搜索海滩、美食、探险...",
+    "exploreMapBtn": "在地图上探索",
+    "topExperiences": "热门体验",
+    "filtersAria": "类别筛选",
+    "categories": { "All": "全部" },
+    "showing": "显示",
+    "destinations": "目的地",
+    "reviews": "评价",
+    "viewDetails": "查看详情 →",
+    "addFavorite": "添加 {{title}} 到收藏",
+    "removeFavorite": "从收藏中移除 {{title}}",
+    "ctaTitle": "准备好规划你的梦想之旅了吗？",
+    "ctaSubtitle": "保存你喜欢的目的地并创建个性化行程。",
+    "backHome": "返回首页"
+  },
+  "itinerary": {
+    "heroTitle": "你的完美毛里求斯之旅即将开始！",
+    "step1": "旅行方式",
+    "step2": "兴趣",
+    "step3": "行程天数",
+    "step4": "您的计划",
+    "step1Title": "您如何出行？",
+    "step1Sub": "选择您的旅行方式以获取个性化推荐",
+    "step2Title": "您的兴趣是什么？",
+    "step2Sub": "选择所有适用项目 — 至少选择一项",
+    "step3Title": "您打算停留几天？",
+    "step3Sub": "选择预设天数或输入自定义天数",
+    "travelTypes": {
+      "solo":     { "label": "独自",   "desc": "独立探索" },
+      "couple":   { "label": "情侣",   "desc": "浪漫之旅" },
+      "family":   { "label": "家庭",   "desc": "老少皆宜" },
+      "group":    { "label": "团体",   "desc": "与朋友同行" },
+      "business": { "label": "商务",   "desc": "工作与休闲" }
+    },
+    "interests": {
+      "beaches":    "海滩与海洋",
+      "nature":     "自然与风景",
+      "culture":    "文化与历史",
+      "adventure":  "探险",
+      "food":       "美食与餐饮",
+      "relaxation": "放松与水疗",
+      "accomm":     "住宿",
+      "value":      "性价比"
+    },
+    "slots": {
+      "morning":   "上午",
+      "afternoon": "下午",
+      "evening":   "晚上"
+    },
+    "customDays": "或输入自定义天数：",
+    "days": "天",
+    "continue": "继续",
+    "back": "返回",
+    "generating": "生成中...",
+    "generateItinerary": "生成行程",
+    "planTitle": "您的毛里求斯 {{days}} 天计划",
+    "planAnother": "规划另一次旅行",
+    "saveItinerary": "保存行程",
+    "savedMsg": "行程已保存到您的账户！",
+    "saveError": "无法保存，请重试。",
+    "saveLogin": "请登录以保存您的行程。",
+    "freeDay": "自由日 — 随心探索",
+    "day": "天",
+    "modify": "修改",
+    "savedSuccess": "行程保存成功！"
+  }
+}
