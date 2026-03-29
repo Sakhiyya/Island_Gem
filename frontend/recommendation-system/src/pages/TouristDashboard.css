@@ -27,7 +27,7 @@
 /* GRID */
 .dashboard-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(420px, 100%), 1fr));
   gap: 40px;
   align-items: start;
 }
@@ -109,15 +109,16 @@
 
 /* RESPONSIVE */
 @media (max-width: 900px) {
-  .tourist-dashboard {
-    padding: 100px 24px 60px;
-  }
+  .tourist-dashboard  { padding: 100px 24px 60px; }
+  .kpi-row            { grid-template-columns: repeat(2, 1fr); }
+  .wide-card          { grid-column: span 1; }
+  .dashboard-grid     { grid-template-columns: 1fr; }
+}
 
-  .kpi-row {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .wide-card {
-    grid-column: span 1;
-  }
+@media (max-width: 480px) {
+  .tourist-dashboard  { padding: 80px 14px 40px; }
+  .kpi-row            { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+  .kpi-card           { padding: 18px 12px; }
+  .kpi-value          { font-size: 26px; }
+  .dashboard-card     { padding: 20px 14px; }
 }
