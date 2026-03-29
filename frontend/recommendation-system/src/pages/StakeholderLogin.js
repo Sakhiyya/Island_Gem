@@ -33,10 +33,10 @@ export default function StakeholderLogin() {
   };
 
   return (
-    <div style={{ display: "flex", minHeight: "100vh", fontFamily: "'Inter', sans-serif" }}>
+    <div className="split-layout" style={{ display: "flex", minHeight: "100vh", fontFamily: "'Inter', sans-serif" }}>
 
       {/* Left panel */}
-      <div style={{ flex: 1, background: "linear-gradient(135deg, #0f172a 0%, #1e3a5f 60%, #00acc1 100%)", display: "flex", alignItems: "center", justifyContent: "center", padding: "60px 48px" }}>
+      <div className="split-left" style={{ flex: 1, background: "linear-gradient(135deg, #0f172a 0%, #1e3a5f 60%, #00acc1 100%)", display: "flex", alignItems: "center", justifyContent: "center", padding: "60px 48px" }}>
         <div style={{ maxWidth: 400, color: "#fff" }}>
           <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 48 }}>
             <span style={{ color: "#00acc1", fontSize: 22 }}>◆</span>
@@ -56,7 +56,7 @@ export default function StakeholderLogin() {
       </div>
 
       {/* Right form */}
-      <div style={{ flex: 1, display: "flex", alignItems: "center", justifyContent: "center", background: "#f8fafc", padding: "60px 48px" }}>
+      <div className="split-right" style={{ flex: 1, display: "flex", alignItems: "center", justifyContent: "center", background: "#f8fafc", padding: "60px 48px" }}>
         <div style={{ width: "100%", maxWidth: 420 }}>
           <button onClick={() => navigate("/login-selection")} style={{ background: "none", border: "none", color: "#64748b", fontSize: "0.85rem", cursor: "pointer", marginBottom: 32, padding: 0 }}>
             ← Back to login selection
