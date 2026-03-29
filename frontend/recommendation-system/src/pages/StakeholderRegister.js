@@ -81,10 +81,10 @@ export default function StakeholderRegister() {
   }
 
   return (
-    <div style={{ minHeight: "100vh", display: "flex", fontFamily: "'Inter', sans-serif" }}>
+    <div className="split-layout" style={{ minHeight: "100vh", display: "flex", fontFamily: "'Inter', sans-serif" }}>
 
       {/* Left panel */}
-      <div style={{ flex: 1, background: "linear-gradient(135deg, #0f172a 0%, #1e3a5f 60%, #00acc1 100%)", display: "flex", alignItems: "center", justifyContent: "center", padding: "60px 48px" }}>
+      <div className="split-left" style={{ flex: 1, background: "linear-gradient(135deg, #0f172a 0%, #1e3a5f 60%, #00acc1 100%)", display: "flex", alignItems: "center", justifyContent: "center", padding: "60px 48px" }}>
         <div style={{ maxWidth: 400, color: "#fff" }}>
           <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 48 }}>
             <span style={{ color: "#00acc1", fontSize: 22 }}>◆</span>
@@ -113,7 +113,7 @@ export default function StakeholderRegister() {
       </div>
 
       {/* Right form */}
-      <div style={{ flex: 1, display: "flex", alignItems: "center", justifyContent: "center", background: "#f8fafc", padding: "60px 48px", overflowY: "auto" }}>
+      <div className="split-right" style={{ flex: 1, display: "flex", alignItems: "center", justifyContent: "center", background: "#f8fafc", padding: "60px 48px", overflowY: "auto" }}>
         <div style={{ width: "100%", maxWidth: 480 }}>
           <button
             onClick={() => navigate("/partners")}
