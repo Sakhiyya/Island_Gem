@@ -44,7 +44,7 @@ function AspectReviews() {
         setLoading(false);
       })
       .catch(() => setLoading(false));
-  }, [id, aspect]);
+  }, [id, aspect, clickedSentiment]);
 
   const sentimentCounts = reviews.reduce((acc, r) => {
     const label = r.sentiment_label || "neutral";
