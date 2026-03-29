@@ -55,8 +55,9 @@ function DestinationDetails() {
       .catch(err => { console.error(err); setLoading(false); });
   }, [id]);
 
-  const handleAspectClick = (aspect) => {
-    navigate(`/explore/${encodeURIComponent(id)}/aspect/${encodeURIComponent(aspect)}`);
+  const handleAspectClick = (aspect, sentiment) => {
+    const sentimentParam = sentiment ? `?sentiment=${encodeURIComponent(sentiment)}` : "";
+    navigate(`/explore/${encodeURIComponent(id)}/aspect/${encodeURIComponent(aspect)}${sentimentParam}`);
   };
 
   // Geocode this attraction for the mini-map
@@ -179,7 +180,7 @@ function DestinationDetails() {
                   <button
                     key={i}
                     className="dd-aspect-card"
-                    onClick={() => handleAspectClick(aspect.aspect)}
+                    onClick={() => handleAspectClick(aspect.aspect, aspect.aspect_sentiment_label)}
                     aria-label={`${capitalize(aspect.aspect.replace(/_/g, " "))} — ${aspect.aspect_sentiment_label} — click to see reviews`}
                     style={{ borderTop: `4px solid ${asp.color}` }}
                   >
