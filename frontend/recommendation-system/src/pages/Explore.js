@@ -263,7 +263,8 @@ function Explore() {
         <div
           role="group"
           aria-label="Sort destinations"
-          style={{ padding: "0 80px 16px", display: "flex", alignItems: "center", gap: "12px" }}
+          className="explore-sort-bar"
+          style={{ display: "flex", alignItems: "center", gap: "12px" }}
         >
           <span id="sort-label" style={{ color: "#64748b", fontSize: "0.9rem" }}>Sort by:</span>
           {[
