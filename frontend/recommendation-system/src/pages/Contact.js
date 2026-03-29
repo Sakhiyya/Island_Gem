@@ -66,7 +66,7 @@ function Contact() {
               <FaPhone className="contact-icon" />
               <div>
                 <p className="detail-label">Phone</p>
-                <a href="tel:+2301234567">+230 123 4567</a>
+                <a href="tel:+23058515683">+230 5851 5683</a>
               </div>
             </div>
 
