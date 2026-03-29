@@ -87,7 +87,7 @@ function Footer() {
           </p>
           <p>
             <a
-              href="tel:+2301234567"
+              href="tel:+23058515683"
               style={{ color: "inherit", textDecoration: "none", display: "flex", alignItems: "center", gap: 6 }}
             >
               <Phone size={16} /> {t("footer.contact.phone")}
