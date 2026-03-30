@@ -87,7 +87,7 @@ function Footer() {
           </p>
           <p>
             <a
-              href="tel:+2301234567"
+              href="tel:+23058515683"
               style={{ color: "inherit", textDecoration: "none", display: "flex", alignItems: "center", gap: 6 }}
             >
               <Phone size={16} /> {t("footer.contact.phone")}
@@ -98,7 +98,12 @@ function Footer() {
 
       {/* BOTTOM BAR */}
       <div className="footer-bottom">
-        <p>{t("footer.bottom.copyright")}</p>
+        <div>
+          <p style={{ margin: "0 0 4px" }}>{t("footer.bottom.copyright")}</p>
+          <p style={{ margin: 0, fontSize: "0.8rem", color: "#94a3b8" }}>
+            Developed by Bibi Iseop Dewan &amp; Naheem Tanny
+          </p>
+        </div>
         <div className="footer-bottom-links">
           <Link to="#">{t("footer.bottom.privacy")}</Link>
           <Link to="#">{t("footer.bottom.terms")}</Link>

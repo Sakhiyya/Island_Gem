@@ -738,3 +738,12 @@
     grid-template-columns: repeat(3, 1fr) !important;
   }
 }
+
+@media (max-width: 480px) {
+  .plan-trip-page   { padding-top: 90px; }
+  .plan-trip-hero h1 { font-size: 2rem; }
+  .plan-trip-hero p  { font-size: 1rem; }
+  .plan-trip-card   { padding: 28px 16px !important; }
+  .step-btn-wrapper { flex-direction: column; gap: 12px; }
+  .itinerary-actions { flex-direction: column; }
+}

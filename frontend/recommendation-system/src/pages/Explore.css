@@ -154,3 +154,13 @@ button {
   background: #f0fdff;
   color: #00acc1;
 }
+
+/* Sort bar */
+.explore-sort-bar {
+  padding: 0 80px 16px;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  .explore-sort-bar { padding: 0 16px 16px; }
+}

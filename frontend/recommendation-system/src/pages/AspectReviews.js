@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useParams, Link } from "react-router-dom";
+import { useParams, Link, useSearchParams } from "react-router-dom";
 import Header from "../components/Header";
 import BackToTop from "../components/BackToTop";
 import { FaStar, FaGlobe, FaCalendarAlt, FaArrowLeft } from "react-icons/fa";
@@ -17,6 +17,8 @@ function capitalize(str) {
 
 function AspectReviews() {
   const { id, aspect } = useParams();
+  const [searchParams] = useSearchParams();
+  const clickedSentiment = searchParams.get("sentiment");
   const aspectLabel = decodeURIComponent(aspect).replace(/_/g, " ");
   const attractionName = decodeURIComponent(id);
 
@@ -31,11 +33,18 @@ function AspectReviews() {
     )
       .then(res => res.json())
       .then(data => {
+        if (clickedSentiment) {
+          data.sort((a, b) => {
+            const aMatch = a.sentiment_label === clickedSentiment ? 0 : 1;
+            const bMatch = b.sentiment_label === clickedSentiment ? 0 : 1;
+            return aMatch - bMatch;
+          });
+        }
         setReviews(data);
         setLoading(false);
       })
       .catch(() => setLoading(false));
-  }, [id, aspect]);
+  }, [id, aspect, clickedSentiment]);
 
   const sentimentCounts = reviews.reduce((acc, r) => {
     const label = r.sentiment_label || "neutral";
@@ -108,8 +117,10 @@ function AspectReviews() {
                 })}
               </div>
               <p style={{ margin: "10px 0 0", fontSize: "0.8rem", color: "#94a3b8" }}>
-                Reviews are sorted by relevance — those that directly mention "{aspectLabel}" appear first,
-                followed by all other reviews for this attraction.
+                {clickedSentiment
+                  ? `Showing ${clickedSentiment} reviews first, followed by all other reviews for this aspect.`
+                  : `Reviews are sorted by relevance — those that directly mention "${aspectLabel}" appear first.`
+                }
               </p>
             </>
           )}

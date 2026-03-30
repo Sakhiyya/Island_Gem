@@ -39,9 +39,9 @@
 }
 
 /* ===== BOOTSTRAP OVERRIDES ===== */
-h1 { font-size: clamp(2rem, 3.8vw, 3rem) !important; line-height: 1.15 !important; }
-h2 { font-size: 2rem !important; }
-h3 { font-size: 1.5rem !important; }
+h1 { font-size: clamp(1.8rem, 3.8vw, 3rem) !important; line-height: 1.15 !important; }
+h2 { font-size: clamp(1.3rem, 4vw, 2rem) !important; }
+h3 { font-size: clamp(1.05rem, 3vw, 1.5rem) !important; }
 
 .container-fluid {
   padding-left: 0 !important;
@@ -69,6 +69,7 @@ body {
   transform: translateX(-50%);
   width: calc(100% - 80px);
   padding: 14px 28px;
+  overflow-x: hidden;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -285,6 +286,10 @@ body {
   text-align: center;
 }
 
+@media (max-width: 768px) {
+  .section { padding: 60px 20px; }
+}
+
 .section.alt {
   background: #eef6f7;
 }
@@ -394,6 +399,11 @@ body {
 /* RESULTS GRID */
 .explore-results {
   padding: 40px 80px;
+}
+
+@media (max-width: 768px) {
+  .explore-filters  { margin: 16px 16px 24px; }
+  .explore-results  { padding: 20px 16px; }
 }
 
 .explore-grid {
@@ -754,6 +764,17 @@ body.dark-mode, .dark-mode {
   align-items: center;
 }
 
+@media (max-width: 900px) {
+  .planner-inner { grid-template-columns: 1fr; gap: 32px; }
+  .planner-right { display: none; }
+  .planner-heading { font-size: 1.6rem; }
+}
+
+@media (max-width: 480px) {
+  .planner-inner { gap: 20px; }
+  .planner-heading { font-size: 1.4rem; }
+}
+
 /* Left column */
 .planner-heading {
   color: #0f172a;
@@ -1091,7 +1112,7 @@ body.dark-mode, .dark-mode {
   background: #ffffff;
   border-radius: 16px;
   padding: 18px;
-  width: 220px;
+  width: min(220px, 90vw);
   box-shadow: 0 10px 30px rgba(0,0,0,0.12);
   animation: fadeIn 0.25s ease;
   z-index: 9999;
@@ -1701,4 +1722,56 @@ body.dark-mode, .dark-mode {
 .related-card-body p  { font-size: 0.78rem; color: #64748b; margin: 0; }
 @media (max-width: 600px) {
   .related-grid { grid-template-columns: 1fr; }
+}
+
+/* ===== GLOBAL MOBILE BREAKPOINTS ===== */
+@media (max-width: 768px) {
+  /* Header */
+  .header {
+    width: calc(100% - 32px);
+    padding: 10px 16px;
+    top: 10px;
+  }
+  .header nav { gap: 4px; }
+  .header nav a { padding: 8px 10px; font-size: 0.85rem; }
+
+  /* Footer */
+  .footer-container { grid-template-columns: 1fr 1fr; gap: 24px; }
+
+  /* Explore island category cards */
+  .explore-cat-grid { grid-template-columns: repeat(2, 1fr); }
+
+  /* Hotel partner banner */
+  .partner-banner-inner { flex-direction: column; gap: 20px; }
+}
+
+@media (max-width: 480px) {
+  /* Header */
+  .header {
+    width: calc(100% - 24px);
+    padding: 8px 12px;
+    top: 8px;
+    border-radius: 14px;
+  }
+
+  /* Footer */
+  .footer-container { grid-template-columns: 1fr; gap: 20px; }
+  .footer-bottom { flex-direction: column; gap: 12px; text-align: center; }
+
+  /* Explore island category cards */
+  .explore-cat-grid { grid-template-columns: 1fr; }
+
+  /* Trending cards */
+  .trending-grid { grid-template-columns: 1fr 1fr; }
+
+  /* Stats row */
+  .stats { gap: 8px; }
+  .stats strong { font-size: 20px; }
+}
+
+/* ── Split two-column login/register layouts ─────────────────── */
+@media (max-width: 768px) {
+  .split-layout { flex-direction: column !important; }
+  .split-left   { display: none !important; }
+  .split-right  { padding: 40px 24px !important; }
 }
