@@ -49,6 +49,7 @@ const transporter = nodemailer.createTransport({
 });
 
 const app = express();
+app.set('trust proxy', 1);
 app.use(cors({ origin: FRONTEND_URL, credentials: true }));
 app.use(express.json());
 app.use(session({
@@ -72,7 +73,8 @@ passport.deserializeUser(async (id, done) => {
 passport.use(new GoogleStrategy({
   clientID:     process.env.GOOGLE_CLIENT_ID,
   clientSecret: process.env.GOOGLE_CLIENT_SECRET,
-  callbackURL:  'http://localhost:5000/auth/google/callback',
+  callbackURL:  `${process.env.BACKEND_URL || 'http://localhost:5000'}/auth/google/callback`,
+  proxy:        true,
 }, async (accessToken, refreshToken, profile, done) => {
   try {
     console.log('[Google OAuth] callback triggered, profile id:', profile.id);
@@ -123,7 +125,7 @@ passport.use(new GoogleStrategy({
 passport.use(new FacebookStrategy({
   clientID:     process.env.FACEBOOK_APP_ID,
   clientSecret: process.env.FACEBOOK_APP_SECRET,
-  callbackURL:  'http://localhost:5000/auth/facebook/callback',
+  callbackURL:  `${process.env.BACKEND_URL || 'http://localhost:5000'}/auth/facebook/callback`,
   profileFields: ['id', 'emails', 'name', 'photos'],
 }, async (accessToken, refreshToken, profile, done) => {
   try {
